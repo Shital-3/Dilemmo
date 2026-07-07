@@ -1,0 +1,26 @@
+
+
+
+:root {
+  /* Colors */
+  --color-bg: #0a0612;
+  --color-purple-primary: #8b5cf6;
+  --color-purple-dark: #6d28d9;
+  --color-purple-glow: rgba(139, 92, 246, 0.35);
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a8a3b8;
+  --color-text-muted: #706b82;
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  /* Typography */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+}

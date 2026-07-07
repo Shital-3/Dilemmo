@@ -1,0 +1,285 @@
+.hero {
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #05030A;
+  overflow: hidden;
+  width: 100%;             /* Ensures it spans exactly the container width */
+  box-sizing: border-box;  /* Prevents padding from adding to the total width */
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ---------- Left content ---------- */
+
+.hero__eyebrow {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #A5B4FC;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.hero__title {
+  font-family: system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+  line-height: 1.15;
+  color: #FFFFFF;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero__title-accent {
+  display: block;
+  background: linear-gradient(90deg, #A78BFA, #D8B4FE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero__subtitle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #9CA3AF;
+  max-width: 480px;
+  margin-bottom: 2.5rem;
+}
+
+.hero__buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px; /* Rectangular pill shape based on layout */
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.hero__btn:hover {
+  transform: translateY(-1px);
+}
+
+.hero__btn--primary {
+  background: #6366F1;
+  color: #fff;
+}
+
+.hero__btn--primary:hover {
+  background: #5355E1;
+}
+
+.hero__btn--outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid #374151;
+}
+
+.hero__btn--outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2.5rem;
+  justify-content: start;
+}
+
+.hero__stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__stat-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #A78BFA;
+}
+
+.hero__stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__stat-value {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.hero__stat-label {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  white-space: nowrap;
+}
+
+/* ---------- Right visual ---------- */
+
+.hero__visual {
+  position: relative;
+  width: 100%;
+}
+
+.hero__scene {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  /* Use your background illustration path here */
+  background-image: url('your-fork-in-road-illustration.png'); 
+  background-size: cover;
+  background-position: center bottom;
+  overflow: hidden;
+}
+
+.hero__scene-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 20%, rgba(5, 3, 10, 0.4) 100%);
+} */
+
+.hero__question-bubble {
+  position: absolute;
+  bottom: 20%;
+  left: 75%; /* Shifted right over the character's path layout */
+  transform: translateX(-50%);
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #312E81;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 3;
+}
+
+.hero__signposts {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2.5rem;
+  z-index: 2;
+}
+
+.hero__sign {
+  position: relative;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Arrow pointing Left */
+.hero__sign--left {
+  background: #6366F1;
+  color: #FFFFFF;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+}
+
+/* Arrow pointing Right */
+/* .hero__sign--right {
+  background: #A3E635;
+  color: #1A2E05;
+  clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+}
+
+.hero__floating-card {
+  position: absolute;
+  right: 4%;
+  bottom: 8%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 250px;
+  padding: 1rem;
+  background: rgba(17, 12, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  z-index: 3;
+}
+
+.hero__floating-card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 0.3rem;
+}
+
+.hero__floating-card-desc {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  line-height: 1.4;
+}
+
+.hero__floating-card-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px dashed rgba(167, 139, 250, 0.4);
+  color: #A78BFA;
+} */
+
+/* ---------- Responsive Breakpoints ---------- */
+
+@media (max-width: 1024px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .hero__visual {
+    order: -1; /* Image jumps above content on smaller monitors */
+  }
+
+  .hero__signposts, .hero__question-bubble {
+    left: 50%; /* Center visual items on full-width viewports */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__stats {
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+}
