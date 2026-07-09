@@ -1,0 +1,176 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --text-dark: #111827;
+  --text-gray: #4b5563;
+  --text-purple: #4f46e5;
+  --border-light: #e5e7eb;
+}
+
+/* 1. Main outer section container */
+.popular-dilemmas-container {
+  font-family: var(--font-family);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  background-color: #fbfbfc; /* Subtle off-white/light-gray section background */
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+/* 2. Header Section */
+.popular-dilemmas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.popular-dilemmas-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.view-all-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-purple);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.view-all-link:hover {
+  opacity: 0.8;
+}
+
+/* 3. Grid Row Layout */
+.dilemmas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Columns precisely balanced */
+  gap: 20px;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 1024px) {
+  .dilemmas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .dilemmas-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 4. White Card Customization */
+.dilemma-card {
+  background: #ffffff; /* Pure white card base */
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  padding: 24px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.01);
+}
+
+/* Comparison Badges Layout */
+.dilemma-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.dilemma-badge {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  line-height: 1.2;
+}
+
+/* Central VS Divider circle */
+.vs-divider {
+  background: #f3f4f6;
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 12px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #ffffff; /* Erases line beneath it cleanly */
+  z-index: 2;
+}
+
+/* Card Footer alignment */
+.dilemma-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-count {
+  font-size: 13px;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.experience-count strong {
+  color: var(--text-purple);
+  font-weight: 700;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 1px solid var(--border-light);
+  color: var(--text-purple);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.explore-btn:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Accurate Colors Sampled From Screenshot */
+.dsa-theme { background-color: #581c87; color: #ffffff; }
+.projects-theme { background-color: #e8f5e9; color: #2e7d32; }
+
+.internship-theme { background-color: #eff6ff; color: #1e40af; }
+.placement-theme { background-color: #fff7ed; color: #c2410c; }
+
+.opensource-theme { background-color: #f3e8ff; color: #6b21a8; }
+.cp-theme { background-color: #e6fffa; color: #00796b; }
+
+.core-theme { background-color: #fee2e2; color: #991b1b; }
+.stack-theme { background-color: #fef3c7; color: #92400e; }
