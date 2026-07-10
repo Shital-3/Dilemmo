@@ -1,0 +1,32 @@
+.list-controls-row { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e5e7eb; margin-bottom: 20px; }
+.filter-tabs-layout { display: flex; gap: 8px; }
+.tab-pill-btn { background: transparent; border: none; padding: 10px 16px; font-size: 13px; font-weight: 500; color: #6b7280; cursor: pointer; border-radius: 6px; }
+.tab-pill-btn.active { background: #4f46e5; color: #ffffff; font-weight: 600; }
+.sort-dropdown-menu { border: 1px solid #e5e7eb; padding: 8px 12px; border-radius: 6px; font-size: 13px; color: #374151; background: #ffffff; }
+
+.student-card-item { border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; margin-bottom: 20px; background: #ffffff; }
+.card-top-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 16px; }
+.user-profile-meta { display: flex; gap: 12px; align-items: center; }
+.avatar-letter { width: 42px; height: 42px; background: #e0f2fe; color: #0369a1; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.name-verify-row h3 { margin: 0; font-size: 15px; color: #111827; display: inline-block; }
+.verified-badge-tag { font-size: 11px; color: #2563eb; background: #eff6ff; padding: 2px 6px; border-radius: 4px; margin-left: 8px; }
+.sub-role-info { margin: 4px 0 0 0; font-size: 13px; color: #6b7280; }
+
+.details-metrics-row { display: grid; grid-template-columns: repeat(4, 1fr); background: #f9fafb; border-radius: 8px; padding: 12px; margin-bottom: 20px; }
+.matrix-cell h6 { font-size: 11px; color: #9ca3af; text-transform: uppercase; margin: 0 0 4px 0; }
+.matrix-cell span { font-size: 13px; color: #374151; font-weight: 500; }
+.dsa-highlight { color: #4f46e5; font-weight: 600; }
+.project-highlight { color: #10b981; font-weight: 600; }
+
+.card-narrative-block h5 { font-size: 13px; color: #111827; margin: 0 0 6px 0; font-weight: 700; }
+.card-narrative-block p { font-size: 13px; color: #4b5563; margin: 0; line-height: 1.5; }
+.split-narrative { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 14px; }
+.full-advice-row { border-top: 1px dashed #f3f4f6; padding-top: 12px; }
+
+.card-resources-row { display: flex; align-items: center; gap: 12px; margin-top: 16px; padding-top: 14px; border-top: 1px solid #f3f4f6; }
+.res-tag-lbl { font-size: 13px; font-weight: 600; color: #6b7280; }
+.res-links-group { display: flex; gap: 10px; }
+.res-links-group a { text-decoration: none; background: #f3f4f6; padding: 4px 10px; border-radius: 6px; font-size: 12px; color: #2563eb; font-weight: 500; }
+
+.paginator-trigger { text-align: center; margin-top: 16px; }
+.paginator-trigger button { background: transparent; border: none; color: #4f46e5; font-weight: 600; font-size: 14px; cursor: pointer; }
